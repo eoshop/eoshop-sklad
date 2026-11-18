@@ -1,11 +1,11 @@
-# EOSHOP skladový skener – živé skenování
+# EOSHOP Skladový skener v4
 
-Nahraďte soubor `index.html` v repozitáři `eoshop/eoshop-sklad` tímto souborem. GitHub Pages: branch `main`, folder `/ (root)`.
+Nahraďte pouze `index.html` v repozitáři eoshop/eoshop-sklad, potvrďte Commit changes. Po publikaci otevřete https://eoshop.github.io/eoshop-sklad/?v=4 .
 
-- Mobilní kamera běží přímo na stránce, bez pořizování či ukládání fotografií.
-- ZXing průběžně hledá EAN/UPC a další čárové kódy. Prohlížeč nemusí podporovat BarcodeDetector.
-- Tlačítko „Načíst štítek“ provede jednorázové OCR snímku pouze v paměti a zkusí načíst interní kód. OCR může být pomalé nebo nepřesné; má časový limit 12 sekund a umožňuje ruční opravu.
-- Uložení záznamu je rychlé, pouze kódy a množství do localStorage. Opakované EAN nejsou automaticky slučovány.
-- Historie funguje **pouze na stejném zařízení a ve stejném prohlížeči**. Přístup z PC ke stejným záznamům vyžaduje budoucí integraci online databáze. Mazání dat prohlížeče odstraní lokální historii.
-- Export XLSX a CSV. Všechny knihovny se načítají z CDN a vyžadují připojení k internetu při prvním načtení.
-- Pokud jsou dva rozdílné přečtené EAN, zobrazí se varování. Jeden EAN není chyba.
+- Živý skener EAN: @zxing/browser (bez závislosti na nativním BarcodeDetector).
+- Interní kód: volitelné OCR ze živého obrazu přes Tesseract.js, může být na mobilu pomalé nebo nepřesné.
+- Uloží se pouze kódy a počet kusů, ne fotografie.
+- EAN je povinný pro uložení produktu; interní kód není povinný.
+- Historie je lokální v prohlížeči daného zařízení. Přístup k historii z PC zatím není implementován.
+- Pro čtečku i OCR je nutný internet k načtení knihoven a HTTPS pro kameru.
+- Pokud fotoaparát nereaguje, zkontrolujte oprávnění kamery v Safari a obnovte stránku.
