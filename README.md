@@ -21,3 +21,7 @@
 - Knihovny OCR a Excel se načítají z veřejných CDN; při prvním použití je potřeba připojení k internetu.
 - Lokální data se mohou ztratit po vymazání dat prohlížeče, změně telefonu či použití anonymního režimu. Průběžně exportujte.
 - Aplikace je funkční prototyp, ne hotový firemní systém. Před ostrým nasazením je třeba otestovat mobilní fotoaparát, typy štítků, ukládání a obnovu.
+
+
+## Rychlejší verze
+Fotografie se ukládají ihned, OCR se spouští až po ukončení focení tlačítkem Zpracovat fotografie. Zobrazuje se průběh. Historie je zatím jen lokální v prohlížeči, nikoli sdílená mezi zařízeními.
