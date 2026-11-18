@@ -1,1 +1,1 @@
-EOSHOP skener v5 – oprava kritické syntaktické chyby JavaScriptu ve v4, která bránila spuštění aplikace a ukládání EAN. Nahraďte index.html v repozitáři eoshop-sklad. Historie je pouze lokální, nikoliv sdílená mezi zařízeními.
+EOSHOP skener v7: EAN přednostně, pokud chybí EAN, LK kód z OCR do sloupce EAN / LK; interní kód zvlášť. Počet kusů ručně. Fotografie se neukládají. Historie je lokální na zařízení, ne synchronizovaná. Nahraj index.html do kořene repozitáře. OCR je potřeba otestovat na iPhonu.
